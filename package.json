@@ -1,0 +1,18 @@
+{
+  "name": "oci-furniture-recomendation-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Carlos Giraldo",
+  "license": "ISC",
+  "dependencies": {
+    "get-image-colors": "^4.0.1",
+    "loadsh": "^0.0.4",
+    "mathjs": "^10.5.3",
+    "oci-sdk": "^2.27.0",
+    "walk": "^2.3.15"
+  }
+}
