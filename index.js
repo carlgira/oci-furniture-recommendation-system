@@ -18,9 +18,7 @@ exports.Utils = (function () {
   var walker  = walk.walk('./images', { followLinks: false });
   const configurationFilePath = process.env.OCI_CONFIG;
   const configProfile = process.env.OCI_PROFILE;
-  console.log(configurationFilePath + " " + configProfile);
   const provider = new common.ConfigFileAuthenticationDetailsProvider(configurationFilePath, configProfile);
-
 
   /* 
       The walker analyzes the image directory.
@@ -32,11 +30,6 @@ exports.Utils = (function () {
       next();
   });
 
-  function sleep(ms) {
-      return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-      });
-  }
   walker.on('end', function() {
       if (!fs.existsSync(datasetFile)){
           fs.writeFileSync(datasetFile, "[]", 'utf8', (error) => {console.log("Error writing")});
