@@ -17,10 +17,5 @@ npm install
 
 ## Run
 ```
-OCI_CONFIG=<path-to-oci-config>
-OCI_PROFILE=<oci-profile>
-npm start
+OCI_CONFIG=<path-to-oci-config> OCI_PROFILE=<oci-profile> npm test
 ```
-
-
-
