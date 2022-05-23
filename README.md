@@ -12,7 +12,14 @@ Use the function "getBestRecomendations" to get the list of recomendations.
 
 ## Build
 ```
-    npm install
+npm install
+```
+
+## Run
+```
+OCI_CONFIG=<path-to-oci-config>
+OCI_PROFILE=<oci-profile>
+npm start
 ```
 
 
